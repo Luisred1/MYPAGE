@@ -1,0 +1,135 @@
+{% extends 'ciencia/base.html' %}
+{% load static %}
+{% block title %} ABOUT {% endblock %}}
+
+{% block background %}{% static 'ciencia/img/Helicoidalrojo.jpg' %}{% endblock %}
+{% block content  %}
+    {% block headers %}        
+        <!--<aside  class="contain1">
+            <div class="containx" class="marco">
+                <img  src="/static/ciencia/img/ondas.jpg" width="550" heigth="660" alt="Notepad++" title="Notepad++ ">-->
+        <!--    </div>
+            <script type="text/javascript">
+                alert('mostrarMensaje1()');
+            </script>
+        </aside> -->              
+    {% endblock %}
+        <!--  
+        <div class="contain1">           
+            <div class="containxx" id="lin">
+                <div id="menu12">                                  
+                
+                </div>
+            </div>
+        </div>-->
+        <!--
+        <div class="containxx" id="lin">
+            <div id="menu12">
+                             
+            </div>
+        </div> -->
+        <div class="contain5" id="lin">
+            <div class="menu123">
+                <ol id="idea1">
+                <li><input type="checkbox" name="list2" id="nivel3-1"><label for="nivel3-1">Desarrollo :</label>
+                    <ol class="interiorn1" id="menu123">
+                        <li><a href="#">Cursos</a></li>
+                        <li><a href="#">Vision</a></li>
+                        <li><a href="#">Mision</a></li>                        
+                    </ol>
+                </li>
+                </ol>   
+                <ol id="idea">
+                    <li><input type="checkbox" name="list1" id="nivel2-1"><label for="nivel2-1">HOBIES :</label>
+                    <ol class="interiorn" id="menu123">                 
+                        <li><a href="#">MATACANES</a></li>
+                        <li><a href="#">HUASTECA</a></li>
+                        <li><a href="#">MITRAS</a></li>
+                    </ol>
+                    </li>
+                </ol>   
+                <ol id="menud">
+                    <li><input type="checkbox" name="list" id="nivel1-1"><label for="nivel1-1">INCUBUS :</label> 
+                    <ol class="interior" id="menu123">
+                        <li><a href="#">NUEVOS</a></li>
+                        <li><a href="#">DEPORTES</a></li>
+                        <li><a href="#">NEGOCIOS</a></li>
+                        <li><a href="#">VENTAS</a></li>
+                        <li><a href="#">COMPRAS</a></li>
+                    </ol>
+                    </li>
+                </ol>           
+            </div>
+        </div> 
+<!--Configuracion menu desplegable revision 1 Inicia despliegue de menu collapsable lineal-->
+    <div  class="contenedor">
+        <div class="barra"> 
+            <ol>
+            <li><a href="#">Inicial 1</a>         
+                <ul>
+                    <li><a href="#">OTROS</a></li>
+                    <li><a href="#">MATACANES</a></li>
+                    <li><a href="#">HUASTECA</a></li>
+                    <li><a href="#">MITRAS</a></li>
+                </ul>
+            </li>
+            </ol>
+            <ol>
+            <li><a href="#">INCUBADORA</a>
+                <ul> <!-- la recomendacion es que el menu desplegue 4 opciones para q sea agradable visualmente
+                    <li><a href="#">NUEVOS</a></li>-->
+                    <li><a href="#">DEPORTES</a></li>
+                    <li><a href="#">NEGOCIOS</a></li>
+                    <li><a href="#">VENTAS</a></li>
+                    <li><a href="#">COMPRAS</a></li>
+                </ul>
+            </li>
+            </ol>
+            <ol>
+            <li><a href="#">NIVELES1</a>
+                <ul>
+                    <li><a href="#">Practica 1</a></li>
+                    <li><a href="#">Practica 2</a></li>
+                    <li><a href="#">Practica 3</a></li>
+                    <li><a href="#">Practica 4</a></li><!--
+                    <li><a href="#">Practica 5</a></li>
+                    <li><a href="#">Practica 6</a></li>-->
+                </ul>
+            </li>
+            </ol>
+            <ol>
+            <li><a href="#">NIVELES2</a>
+                <ul>
+                    <li><a href="#">EQUIPO 1</a></li>
+                    <li><a href="#">EQUIPO 2</a></li>
+                    <li><a href="#">EQUIPO 3</a></li>
+                    <li><a href="#">EQUIPO 4</a></li><!--
+                    <li><a href="#">EQUIPO 5</a></li>
+                    <li><a href="#">EQUIPO 6</a></li>-->
+                </ul>
+            </li>
+            </ol>
+        </div>    
+    </div>
+    <div  class="contenedor1">
+        <div class="barra"> 
+            <ol>
+            <li><a href="#">Ofertas 1</a>
+                <ul>
+                    <li><a href="#">OTROS</a></li>
+                    <li><a href="#">MATACANES</a></li>
+                </ul>
+            </li>
+            </ol>
+            <ol>
+            <li><a href="#">Ofertas 2</a>
+                <ul> 
+                    <li><a href="#">HUASTECA</a></li>
+                    <li><a href="#">MITRAS</a></li>
+                </ul>
+            </li>
+            </ol>
+        </div>
+    </div>
+
+{% endblock  %}

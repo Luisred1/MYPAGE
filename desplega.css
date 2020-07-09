@@ -1,0 +1,86 @@
+/* creado para generar menu desplegable con un contenedor lineal */
+/* llama a la pagina ABOUT*/
+.contenedor {
+    background-color: none;
+    position: absolute;
+    top: 120px;
+    left: 150px;
+    height: 50px;
+    width: 1100px;
+}
+.contenedor1 {
+    background-color: none;
+    position: absolute;
+    top: 300px;
+    left: 150px;
+    height: 50px;
+    width: 1100px;
+}
+.barra {
+    background-color:none;
+    left: 10px;
+    top:10px;
+    height: 40px;
+    width: 95%;
+}
+.barra a {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    padding: 5px;
+    display:inline-block;
+}
+.barra ol {
+    display: inline;
+    margin: 0px;
+    padding: 10px;
+}
+.barra ol li {display: inline-block;}
+.barra ol li:hover {background: rgb(38, 163, 65);}
+.barra ol li:hover ul {display: block;}
+.barra ol li ul {
+  position: relative;
+  top: 1px;
+  width: 200px;
+  display: none;
+  left: -200px;
+  padding-left: 0;/* estabilizando para las actualizaciones bootstraps*/
+  height: 5px;
+}
+.barra ol li ul li { 
+  background: rgb(56, 28, 156);
+  display: block;/*
+  height: 20px;*/
+}
+.barra ol li ul li a {display:block !important;} 
+ .barra ol li ul li:hover {background: #666;}
+
+/* Verifica y se usa para el contenedor de JS*/
+.secta {
+    /* position is static by default *//*
+    float: right;   float se desfasa del header con las actualizaciones*/  
+    left: 135px;
+    background-color: black;
+    margin: 1px;
+    width: 90%;  
+    border-radius: 3px; 
+    position: absolute;
+ }
+ .piedepagina {
+     left: 150px;     
+     background:navy;
+     width: 700px;
+     height: 70px;
+     position: relative;     
+ }
+ .pieayuda {
+     left: 50px;
+     margin: 5px;
+     margin-top: 5;
+     background: black;
+     color: gray;
+     width: 580px;
+     height: 60px;
+     display: inline-block;
+     padding: 5px;
+ }

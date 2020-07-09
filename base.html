@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Estilos y fuentes del template  -->
+    {% load static %}
+    <meta charset="UTF-8"><!--
+    <link href="{% static 'ciencia/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="{% static 'ciencia/vendor/font-awesome/css/font-awesome.min.css' %}" rel="stylesheet" type="text/css">-->
+    <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <!--<link href="{% static 'ciencia/css/clean-blog.min.css' %}" rel="stylesheet">-->
+
+    <link type="text/css" rel="stylesheet" src="css/animate.css">
+    <link type="text/css" rel="stylesheet" src="css/bootstrap-theme.min.css">
+    <link type="text/css" rel="stylesheet" src="css/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" src="css/custom.css"><!-- copia de la linea inferior cambio href por src
+    <link type="text/css" rel="stylesheet" href="css/custom.css">-->
+    <link rel="stylesheet" type="text/css" href="fonts/style.css">
+    
+    <link href="{% static 'fonts/style.css' %}" type="text/css" rel="stylesheet">
+    <link href="{% static 'ciencia/css/contactar.css' %}" type="text/css" rel="stylesheet">
+    <link href="{% static 'ciencia/css/desplega.css' %}" type="text/css" rel="stylesheet">
+    <link href="{% static 'ciencia/css/social.css' %}" type="text/css" rel="stylesheet">
+    <link href="{% static 'ciencia/css/hoober.css' %}" type="text/css" rel="stylesheet">
+    <link href="{% static 'ciencia/css/estilo.css' %}" type="text/css" rel="stylesheet">
+    <link href="{% static 'ciencia/css/base.css' %}" type="text/css" rel="stylesheet">
+    <link href="{% static 'base.css' %}" type="text/css" rel="stylesheet" media="screen,projection">
+    <link href="{% static 'estilo.css' %}" type="text/css" rel="stylesheet" media="screen,projection">
+    <link href="{% static 'hoober.css' %}" type="text/css" rel="stylesheet" media="screen,projection">
+    <link href="{% static 'social.css' %}" type="text/css" rel="stylesheet" media="screen,projection">
+    <link href="{% static 'desplega.css' %}" type="text/css" rel="stylesheet" media="screen,projection">
+    <link href="{% static 'style.css' %}" type="text/css" rel="stylesheet" media="screen,projection">
+    <link href="{% static 'contactar.css' %}" type="text/css" rel="stylesheet" media="screen,projection">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    
+    <!--  nucleo js llamando Bootstrap no funciona ++++
+    <script src="lib/js/jquery.min.js"></script>
+    <script src="lib/js/bootstrap.min.js"></script>
+    <script src="lib/js/bootstrap.min.js"></script>
+        finaliza segun stackflow-->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <!--<script type="text/javascript" src="/static/ciencia/js/elemento.js"></script>-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+    
+    <!--<script type="text/javascript" src="js/script.js"></script>-->
+    
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Bootstrap y Javascripts -->
+
+    <!--<script src="{% static 'ciencia/vendor/jquery/jquery.min.js' %}"></script>
+    <script src="{% static 'ciencia/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static 'ciencia/js/clean-blog.min.js' %}"></script>-->
+    <title>{% block title %}{% endblock %} | JL Red (Ingeniero) </title>
+
+    <!-- script para evitar los mensajes tipo mime
+    <script type="text/javascrpt"> 
+      geoShippingConfig = {
+          somevalue: '{{ shop.X }}',
+          etc
+      };
+     Try this:
+     response.addHeader("accept","text/javascript");
+
+            set in the response of script tag from where it is called.
+    </script>-->
+
+
+</head>
+
+<body class="container">
+<header>
+<!--    <button id="buton" type="button" onclick="document.getElementById('demo').innerHTML = Date()">
+    <a class="navbar-brand" href="/">JL Red</a></button> -->  
+   <h1>Mi Web Personal</h1>
+</header> 
+<section id="bodyx" class="hero-image" style="background-image: url('{% block background %}{% endblock %}')">
+<nav>   
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ol class="navbar-nav ml-auto" class="lx">
+            <li class="nav-item"><button type="button" onclick=""><a class="nav-link" href="/">Portada</a></button></li>
+            <li class="nav-item"><button type="button" onclick=""><a class="nav-link" href="/about/">Acerca de</a></button></li>
+            <li class="nav-item"><button type="button" onclick=""><a class="nav-link" href="/portafolio/">Portafolio</a></button></li>
+            <li class="nav-item"><button type="button" onclick=""><a class="nav-link" href="/contact/">Contacto</a></button></li>
+            <li class="nav-item"><button type="button" onclick=""><a class="nav-link" href="/galery/">Galeria</a></button></li>
+            <li class="nav-item"><button type="button" onclick=""><a class="nav-link" href="/pruebas/">Pruebas</a></button></li>
+            <li class="nav-item"><button type="button" onclick=""><input type="date" name="cumpleaños" step="1"></button></li>
+        </ol>
+    </div>
+    
+</nav>
+
+</section>
+<!-- Inicia pruebas js-->
+<div class="secta">
+<div class="piedepagina">
+
+    <div class="pieayuda">       
+                <button id="boton" type="button" onclick="document.getElementById('ejemplo').innerHTML = Date()">FECHA</button>
+        <button onclick="imprimir()">Imprimir pantalla</button>
+        <script>
+            function imprimir() {window.print();}
+        </script>             
+            <button onclick="alerta()">Click</button>
+            <p id="ejemplo">al pulsar click empezara la funcion</p>
+        <script>
+            function alerta() {
+                var mensaje;
+                var opcion = prompt("Teclea tu nombre :","Luis Red");
+                    if (opcion == null || opcion == "") {
+                        mensaje = "Espacio Vacio";
+                        document.getElementById("ejemplo").innerHTML = mensaje;
+                    } else {
+                        mensaje = "Hola " + opcion;
+                        document.getElementById("ejemplo").innerHTML = mensaje;
+                    }
+            }
+        </script>
+            
+            <button id="cambiar" type="button" onclick="cambio"> MI TEXT </button>
+            <h3>EVIDENCIA js</h3>
+        <script>
+            function cambio() {
+                var miTest = document.querySelector('h3');
+                miTest.textContent = '¡Hola Felicidades!';
+                document.getElementById("cambiar").innerHTML = miTest.textContent;
+            }
+        </script>
+         
+    </div>
+</div>  
+<h3>EVIDENCIA js</h3> 
+</div>        
+<script type="text/javascript"></script>
+ 
+<!-- Inicia iconos de redes sociales-->
+    {% block content %}{% endblock %} 
+  
+<footer id="miTitulo">
+
+    <button id="boton" type="button" onclick="document.getElementById('miTitulo').innerHTML = Date()">FECHA</button> 
+</footer> 
+    <script type="text/javascript" src="/ciencia/static/ciencia/js/elemento.js"> </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+
+
+</body>
+</html>

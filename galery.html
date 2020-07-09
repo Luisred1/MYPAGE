@@ -1,0 +1,64 @@
+{% extends 'ciencia/base.html' %}
+{% load static %}
+{% block title %} GALERIA {% endblock %}
+{% block background %}{% static 'ciencia/img/CASAM1.jpg' %}{% endblock %}
+{% block content  %}
+    {%block heather %}        
+        <aside class="contain2">
+            <div class="containx" id="marco">               
+                <div class="galeria">
+                    <input type="radio" name="navegacion" id="_1" cheked>
+                    <input type="radio" name="navegacion" id="_2">
+                    <input type="radio" name="navegacion" id="_3">
+                    <input type="radio" name="navegacion" id="_4">
+                    <input type="radio" name="navegacion" id="_5">
+                    <input type="radio" name="navegacion" id="_6">
+                    <input type="radio" name="navegacion" id="_7">
+                    <img src="/static/ciencia/img/CASAM1.jpg" width="250" heigth="360" alt="IMAGEN1" />
+                    <img src="/static/ciencia/img/CIUDAD1.jpg" width="250" heigth="360" alt="IMAGEN2" />
+                    <img src="/static/ciencia/img/CUADRO1.jpg" width="250" heigth="360" alt="IMAGEN3" />
+                    <img src="/static/ciencia/img/Electronica.jpg" width="250" heigth="360" alt="IMAGEN4" /> 
+                    <img src="/static/ciencia/img/Helicoidalrojo.jpg" width="250" heigth="360" alt="IMAGEN5" /> 
+                    <img src="/static/ciencia/img/MYWEBPAGE.jpg" width="250" heigth="360" alt="IMAGEN6" /> 
+                    <img src="/static/ciencia/img/ondas.jpg" width="250" heigth="360" alt="IMAGEN7" />
+                <!--</div> -->
+                <!--    <button type="button" onclick="myMove()">Click Me</button>
+                    <h4 onclick="changeText(this)">Click on this text!</h4> 
+                    <button onclick="displayDate()">The time is?</button>
+                    <p id="demo"></p>
+                    <div id="animate"></div>-->
+                </div>
+            </div>
+        </aside>
+        <aside class="contain1">
+            <div class="containx" id="marco">               
+                <div class="foto">
+                    <input type="radio" name="navega" id="_1" cheked>
+                    <input type="radio" name="navega" id="_2">
+                    <input type="radio" name="navega" id="_3">
+                    <input type="radio" name="navega" id="_4">
+                    <input type="radio" name="navega" id="_5">
+                    <input type="radio" name="navega" id="_6">
+                    <input type="radio" name="navega" id="_7">
+                    <img src="/static/ciencia/img/CASAM1.jpg" width="250" heigth="360" alt="IMAGEN1" />
+                    <img src="/static/ciencia/img/CIUDAD1.jpg" width="250" heigth="360" alt="IMAGEN2" />
+                    <img src="/static/ciencia/img/CUADRO1.jpg" width="250" heigth="360" alt="IMAGEN3" />
+                    <img src="/static/ciencia/img/Electronica.jpg" width="250" heigth="360" alt="IMAGEN4" /> 
+                    <img src="/static/ciencia/img/Helicoidalrojo.jpg" width="250" heigth="360" alt="IMAGEN5" /> 
+                    <img src="/static/ciencia/img/MYWEBPAGE.jpg" width="250" heigth="360" alt="IMAGEN6" /> 
+                    <img src="/static/ciencia/img/ondas.jpg" width="250" heigth="360" alt="IMAGEN7" /> 
+                </div>
+            </div>
+        </aside>
+        <div class="contain5">  
+            <div class="containx" id="marco">               
+                <div class="celda">
+                    <input type="radio" name="nuevo" id="_1" cheked>
+                    <input type="radio" name="nuevo" id="_2">  
+                    <img src="/static/ciencia/img/CASAM1.jpg" width="250" heigth="360" alt="IMAGENx1" />
+                    <img src="/static/ciencia/img/CIUDAD1.jpg" width="250" heigth="360" alt="IMAGENx2" />     
+                </div>
+            </div>
+        </div>
+    {% endblock %}
+{% endblock %}

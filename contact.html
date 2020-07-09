@@ -1,0 +1,67 @@
+{% extends 'ciencia/base.html' %}
+{% load static %}
+{% block title %} CONTACTO {% endblock %}
+{% block background %}{% static 'ciencia/img/CIUDAD1.jpg' %}{% endblock %}
+<link rel="stylesheet" type="text/css" href="/static/fonts/style.css">
+{% block content %}
+    {% block headers %}    
+    <!--<h3 id="x">REFERENCIA HEADERS</h3>-->
+    {% endblock %}
+    <div id="piedepagina">
+        <p>HOLA</p>
+        <script type="text/javascript">
+            alert('Estamos cargando los contenidos de la web...');
+        </script>
+        <p>REGRESAMOS</p> 
+
+    </div>
+    <div class="social2">                                 
+        <ul>
+            <li><a href="mailto:exitojl2018@gmail.com" target="_blank" class="icon-mail">Email</a></li>
+            <li><a href="https://github.com/hcosta" target="_blank" class="icon-github">Github</a></li>
+            <li><a href="https://web.facebook.com/profile.php?id=100032271460017&ref=bookmarks" target="_blank" class="icon-facebook">Facebook</a></li>
+        </ul>
+    </div>
+    <aside class="contain2">
+        <h4 id="x">FORMULARIO</h4>         
+        <form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post" id="x">
+            Name: <input type="text" name="fname"><hr>
+        
+            <label for="nombre">Nombre de Usuario</label>
+            <input type="text" name="nombre" id="nombre" required>
+            <span  id="ayudanombre"></span><br>
+            <label for="clave">Dame la Contraseña</label>
+            <input type="password" name="clave" id="clave" required>
+            <span  id="ayudaClave"></span><br>
+            <label for="email">Direccion Email:</label>
+            <input type="email" name="email" id="email" required placeholder="user@gmail.com">
+            <span  id="ayudaEmail"></span><hr>
+            <input type="checkbox" name="confirmacion" id="confirmacion">
+            <label for="confirmacion">Enviame un Email de Confirmacion</label><br>
+            <input type="radio" name="suscripcion" id="newspromo" value="newspromo">
+            <label  for="newspromo">NEWSLETTER Y PROMOCIONES</label><br>
+            <input type="radio" name="suscripcion" id="news" value="news">
+            <label  for="news">NEWSLETTER</label><br>
+            <input type="radio" name="suscripcion" id="nonewspromo" value="nonewspromo">
+            <label for="nonewspromo">PROMOCIONES</label><br>
+            <label id="xx" for="nacionalidad">Nacionalidad:</label>
+            <select name="nacionalidad" id="nacionalidad">
+                <option value="ME" selected>Mexicano</option>
+                <option value="ES">Español</option>
+                <option value="AR">Argentino</option>
+                <option value="Otra">Otra</option>                
+            </select>
+           <input type="submit" value="Submit">
+           <input type="reset" value="cancel">
+        </form>
+    </aside>
+        <div class="social">
+            <ul>
+                <li><a href="https://web.facebook.com/profile.php?id=100032271460017&ref=bookmarks" target="_blank" class="icon-facebook">Facebook</a></li>
+                <li><a href="http://www.twitter.com/falconmasters" target="_blank" class="icon-twitter">Twitter</a></li>
+                <li><a href="http://www.googleplus.com/falconmasters" target="_blank" class="icon-google">Gogle</a></li>
+                <li><a href="https://www.pinterest.com.mx/exitojl2018/boards/" target="_blank" class="icon-pinterest">Pinterest</a></li>
+                <li><a href="mailto:exitojl2018@gmail.com" class="icon-mail">email</a></li>
+            </ul>
+        </div>
+{% endblock %}

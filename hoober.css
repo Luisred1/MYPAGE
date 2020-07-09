@@ -1,0 +1,71 @@
+/* Contenedores */
+
+.containz {
+    position: absolute;
+    top: 100px;
+    left: 20px;
+    height: 10px;
+    width: 900px;  
+    background-color:none;
+    margin: 5px;
+  }
+  .containy {
+    position: absolute;
+    top: 100px;
+    right:20px;
+    height: 10px;
+    width: 900px;  
+    background-color: none;
+   ; 
+    margin: 5px;
+    
+  }
+#marcos {
+    margin-top: 25px;
+    margin-bottom: 5px;
+    margin-left: 25px;
+    margin-right: 5px;
+    background-color: black;
+    position: static;
+  }
+/* Empieza la operacion hoover*/
+.contain11 {    
+    position: relative;
+    width: 100%;
+    /*background-color: teal;*/
+    /*display: inline;*/
+  }  
+  .image1 {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    background-color: yellow;
+  }  
+  .middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-100%, -5%);
+    -ms-transform: translate(-90%, -90%);
+    text-align: justify;
+  }  
+  .contain11:hover .image1 {
+    opacity: 0.3;
+  }  
+  .contain11:hover .middle {
+    opacity: 1;
+  }  
+  .text {
+    background-color: rgb(5, 30, 77);
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
+  }
+  .text p h5{
+      color: white
+  }

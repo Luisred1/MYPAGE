@@ -1,0 +1,116 @@
+/* {
+    background-color:#333;
+  }*/
+  .galeria {
+    height: calc( 310px + 3em);
+    width: 250px;
+    margin:1em auto;
+    border: 1px solid black;
+    position: relative;  
+  }
+  .galeria img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 3s;
+  }
+  .galeria input[type=radio] {
+    position: relative;
+    bottom: calc(-300px - 1.5em);
+    left: .5em;
+  }
+  .galeria input[type=radio]:nth-of-type(1):checked ~ img:nth-of-type(1) {
+    opacity: 1;
+  }
+  .galeria input[type=radio]:nth-of-type(2):checked ~ img:nth-of-type(2) {
+    opacity: 1;
+  }
+  .galeria input[type=radio]:nth-of-type(3):checked ~ img:nth-of-type(3) {
+    opacity: 1;
+  }
+  .galeria input[type=radio]:nth-of-type(4):checked ~ img:nth-of-type(4) {
+    opacity: 1;
+  }
+  .galeria input[type=radio]:nth-of-type(5):checked ~ img:nth-of-type(5) {
+    opacity: 1;
+  }
+  .galeria input[type=radio]:nth-of-type(6):checked ~ img:nth-of-type(6) {
+    opacity: 1;
+  }
+  .galeria input[type=radio]:nth-of-type(7):checked ~ img:nth-of-type(7) {
+    opacity: 1;
+  }
+ /*talento*/
+ /*.talento * {
+    background-color:#333;
+  } */ 
+  .foto {
+    height: calc( 310px + 3em);
+    width: 250px;
+    margin:1em auto;
+    border: 1px solid none;
+    position: relative;  
+  }
+  .foto img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 3s;
+    
+  }
+  .foto input[type=radio] {
+    position: relative;
+    bottom: calc(-310px - 1.5em);
+    left: .5em;
+  }
+  .foto input[type=radio]:nth-of-type(1):checked ~ img:nth-of-type(1) {
+    opacity: 1;
+  }
+  .foto input[type=radio]:nth-of-type(2):checked ~ img:nth-of-type(2) {
+    opacity: 1;
+  }
+  .foto input[type=radio]:nth-of-type(3):checked ~ img:nth-of-type(3) {
+    opacity: 1;
+  }
+  .foto input[type=radio]:nth-of-type(4):checked ~ img:nth-of-type(4) {
+    opacity: 1;
+  }
+  .foto input[type=radio]:nth-of-type(5):checked ~ img:nth-of-type(5) {
+    opacity: 1;
+  }
+  .foto input[type=radio]:nth-of-type(6):checked ~ img:nth-of-type(6) {
+    opacity: 1;
+  }
+  .foto input[type=radio]:nth-of-type(7):checked ~ img:nth-of-type(7) {
+    opacity: 1;
+  }
+  /* nueva galeria celda */
+  .celda {
+    height: calc( 310px + 3em);
+    width: 250px;
+    margin:2em auto;
+    border: 1px solid gray;
+    position: relative;  
+  }
+  .celda img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 3s;
+    
+  }
+  .celda input[type=radio] {
+    position: relative;
+    bottom: calc(-310px - 1.5em);
+    left: .5em;
+  }
+  .celda input[type=radio]:nth-of-type(1):checked ~ img:nth-of-type(1) {
+    opacity: 1;
+  }
+  .celda input[type=radio]:nth-of-type(2):checked ~ img:nth-of-type(2) {
+    opacity: 1;
+  }
+ 

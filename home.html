@@ -1,0 +1,19 @@
+
+{% extends 'ciencia/base.html' %}
+{% load static %}
+{% block title %} PORTADA {% endblock %}
+{% block background %}{% static 'ciencia/img/MYWEBPAGE.jpg' %}{% endblock %}
+{% block content  %}
+    {% block headers %} 
+<aside class="cuadro2">
+    <div class="cuadro">XXX
+        <div class="tooltiptext">
+        <ol>
+            <li><button type="button" ><a  class="tooltiptext"> Ha sido extremadamente dificil realizar este paso </a></button></li>
+            <li><button type="button" onclick="tooltip"><a class="tooltiptext">Portada</a></button></li>
+        </ol>
+        </div>
+    </div>
+</aside>                  
+    {% endblock %}    
+{% endblock  %}

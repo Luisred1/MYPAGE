@@ -1,0 +1,329 @@
+@charset "utf-8";
+.container {
+    position: absolute;
+    height: 95%;
+    width: 95%;
+    /*background-color: rgb(82, 104, 153);*/
+    background-color: rgb(68, 3, 3);
+    /*background-color: black;*/
+}
+.contain {
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    height: 70px;
+    width: 50px;
+}
+.contain1 {              /* Contenedor a la izquierda */
+    position: absolute;
+    /*float: left;    si se define la posicion left no es necesario float */
+    top: 90px;
+    left: 110px;
+    height: 400px;
+    width: 310px;
+    background: none;
+    background-color: none;
+}
+.contain2 {
+  position: absolute;
+  top: 90px;
+  right: 10px;
+  height: 400px;
+  width: 310px;
+}
+.containx {
+  position: absolute;
+  top: 90px;
+  right: 70;
+  height: 350px;
+  width: 250px;  
+  background-color:none;
+  display: list-item; 
+  margin: 5px;
+}
+.containxx {
+  position: relative;
+  top: 44px;
+  right: 0;
+  height: 100px;
+  width: 270px; 
+  background-color:none;
+  display: list-item; 
+  margin: 5px;
+}
+.contain3 {
+  position: absolute;
+  top: 250px;
+  right: 10px;
+  height: 170px;
+  width: 350px;
+}
+.contain4 {
+  position: absolute;
+  top: 200px;
+  right: 10px;
+  height: 100px;
+  width: 350px;
+}
+.contain5 {
+  position: absolute;
+  top: 90px;
+  right: 350px;
+  height: 200px;
+  width: 270px;
+}
+  header {
+    position: relative;
+    left: 120px;
+    /*width: 400px;*/
+    background-color: rgb(70, 121, 187);
+    /*background-color: none;*/
+    height: 60px;
+    width: 93%;
+    margin: 1px;
+    border-radius: 3px;
+  }
+  nav {
+    position: relative;
+    left: 15px;
+    background-color: rgb(76, 96, 133);
+    height: 40px;
+    width: 100%;
+    margin: -15px;
+  }
+  section {
+    /* position is static by default *//*
+    float: right;   float se desfasa del header con las actualizaciones*/  
+    left: 120px;
+    background-color: rgb(24, 35, 97);
+    margin: 1px;
+    width: 93%;  
+    border-radius: 3px;  
+  }
+  aside {
+    position: relative;
+    right: 0px;
+    background-color: none;
+    margin-left: 20%;
+    margin-right: 5px;
+    width: 200px;
+    margin: 5px;
+  }
+  footer {
+    position: fixed;
+    bottom: 0;
+    left: 50px;
+    height: 40px;
+    background-color: rgb(2, 9, 15);
+    margin: 5px;
+    width: 90%;
+  }
+  body {    
+    margin-bottom: 120px;
+  }
+  /*   contenedor de imagen */
+  #bodyx {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .hero-image{
+    background-image: url("/static/ciencia/img/CASAM1.jpg");
+    background-color: #570606;
+    height: 450px;
+    /*width: 200;*/
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  h1{
+    text-align: justify;
+    position: absolute;
+    top:20%;
+    left: 40%;
+    transform: translate(-20%,-50%);
+  }
+  h2{
+    text-align: justify;
+    position: absolute;
+    top:30%;
+    left: 40%;
+    transform: translate(-50%,-50%);
+  }
+  p{
+    background-color: rgb(2, 2, 22);
+    text-align: justify;
+    position: absolute;
+    top:none;
+    left:none;
+  }
+  ul{
+    background-color:blue;
+    text-align:center;
+    text-shadow: yellowgreen;
+    text-decoration-color: yellow;
+    position: absolute;
+    top:50%;
+    left: 40%;
+    transform: translate(100%,100%);
+  }
+  
+  #menu12{
+    background-color:none;
+    top: 50px;
+    height: 50px;
+    width: 100;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: fixed;
+    position: absolute;
+    display: run-in;  /* Muestra */
+    color: rgb(76, 0, 255);
+    margin: 25px;
+  }
+  .menu123 {
+    background-color: none;
+    top:90px;
+    height: 150px;
+    width: 100;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: fixed;
+    position: relative;
+    display: run-in;  /* Muestra */
+    color: rgb(76, 0, 255);
+    margin: 25px;
+  }
+  /* Genera un contenedor flexible el cual permite realizar un cuadro con flexibilidad de cajas internas*/
+  .flexible{
+      display: -webkit-flex;
+      display: flex;      
+  }
+  .inicialflex{
+    -webkit-flex: initial;
+            flex: initial;
+    width: 200px;
+    min-width: 100px;
+    background-color: rgb(185, 193, 207);
+    margin: 5px;
+    
+  }
+  .flex1{
+    -webkit-flex: 1;
+            flex: 1;
+    background-color: rgb(65, 85, 122);
+  }
+  .flex2{
+    -webkit-flex: 2;
+            flex: 2;
+    background-color: rgb(82, 97, 126);  
+    height: 70px;
+    margin: 5px;
+    margin-bottom: 5px;
+    margin-top: 30px;  
+  }
+  /*Termina el cuadro flexible*/
+  .caja{
+      height: 60px;
+      margin: 5px;
+  }
+  /* COLOR DE TEXTO*/
+  h1 {
+    color: rgb(75, 75, 80);
+  }
+  p {
+    color: rgb(243, 236, 242);
+  }
+  nav li {
+    background-color: blue;
+    display: inline-flex;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 2px;
+    margin-bottom: 1px;
+    height: 35px;
+  }
+  #x {
+    color: rgb(93, 93, 105);
+    background-color: rgb(2, 2, 22);
+    text-align: left;
+  }
+  #xx {
+    left: 5px;
+    text-align: justify;
+  }
+  #animate {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    background: red;
+  }
+  #marco {
+    margin-top: 25px;
+    margin-bottom: 5px;
+    margin-left: 25px;
+    margin-right: 5px;
+    background: none;
+    position: static;
+  }
+  /*pagina ABOUUT LISTA DESPLEGABLE ID menuD*/
+#menud * { list-style:length;}
+#menud li{ line-height:180%; display: box;}
+#menud li a{color:#222; text-decoration:none;}
+#menud li a:before{ content:"\025b8"; color:#ddd; margin-right:4px;}
+#menud input[name="list"] {
+	position: relative;
+	left: -1000em;
+	}
+#menud label:before{ content:"\025b8"; margin-right:4px;}
+#menud input:checked ~ label:before{ content:"\025be";}
+#menud .interior{display: none;}
+#menud input:checked ~ ol{display:block;}
+/* TERNINA MENU */
+ /*LISTA DESPLEGABLE ID idea*/
+ #idea * { list-style:none;}
+ #idea li{ line-height:180%; }
+ #idea li a{color:#222; text-decoration:none;}
+ #idea li a:before{ content:"\025b8"; color:#ddd; margin-right:4px;}
+ #idea input[name="list1"] {
+   position: relative;
+   left: -1000em;
+   }
+ #idea label:before{ content:"\025b8"; margin-right:4px;}
+ #idea input:checked ~ label:before{ content:"\025be";}
+ #idea .interiorn{display: none;}
+ #idea input:checked ~ ol{display:block;}
+ /*Termina lista desplegable idea*/
+ /*Inicia visualizacion hoveer */
+ #lin {
+   display: b;
+   top: 0;
+ }
+ #lin h2 {
+   color: yellow;
+ }
+ #lin ol li:hover {
+   background-color: navy;
+ }
+#lin ol li:hover ol {
+  display: block;
+}
+#lin ol li:hover ol:hover li {
+  display: inline-block;
+  color: black;
+}
+/*End Hover*/
+ /*LISTA DESPLEGABLE ID idea1*/
+ #idea1 * { list-style:none;}
+ #idea1 li{ line-height:180%; }
+ #idea1 li a{color:#222; text-decoration:none;}
+ #idea1 li a:before{ content:"\025b8"; color:#ddd; margin-right:4px;}
+ #idea1 input[name="list2"] {
+   position: relative;
+   left: -1000em;
+   }
+ #idea1 label:before{ content:"\025b8"; margin-right:4px;}
+ #idea1 input:checked ~ label:before{ content:"\025be";}
+ #idea1 .interiorn1{display: none;}
+ #idea1 input:checked ~ ol{display:block;}
+ /*Termina lista desplegable idea*/

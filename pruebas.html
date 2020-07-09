@@ -1,0 +1,73 @@
+<!-- Pagina de Pruebas enlazado con la pagina css contactar.css verificando la funcion de ventana-->
+{% extends 'ciencia/base.html' %}
+{% load static %}
+{% block title %} PORTADA {% endblock %}
+{% block background %}{% static 'ciencia/img/CUADRO1.jpg' %}{% endblock %}
+    
+    <title>PRUEBA</title>
+    <link rel="shortcut icon" href="/ciencia/img/CUADRO1.jpg">
+    <link rel="stylesheet" type="text/css" href="/static/fonts/style.css"> 
+{% block content  %}
+<div class="cuadro1">
+    <div class="cuadro">  
+        <div class="interactPluginX">
+        
+            <div class="engage_icons floatingType">
+
+                <div class="floating-engage scheduler" onclick="CCMgr.logClick('scheduler');CCMgr.openWindow('scheduler')" style="background-color: rgb(72, 72, 72);">
+                    <div class="buttonCaption" style="background-color: rgb(72, 72, 72); color: rgb(255, 255, 255); font-family: Verdana;">
+                         Reserva en línea
+                    </div>                        
+                        <!--
+                        <a alt="Reserva en linea" class="icon-calendar"></a>-->
+                        <img alt="Reserva en línea" src="/static/ciencia/img/CUADRO1.jpg"><!--
+                        <a alt="Reserva en linea" class="icon-calendar"></a>-->                        
+                </div>
+                <div class="floating-engage contact" onclick="CCMgr.logClick('contact');CCMgr.openWindow('contact')" style="background-color: rgb(72, 72, 72);">
+                    <div class="buttonCaption" style="background-color: rgb(72, 72, 72); color: rgb(255, 255, 255); font-family: Verdana;">
+                        Contáctanos
+                    </div><!--
+                        <img alt="Contáctanos" src="/images/engage/Form_Engage.svg">-->
+                        <img alt="Reserva en línea" src="/static/ciencia/img/CIUDAD1.jpg"><!--
+                        <a alt="Reserva en linea" class="icon-menu"></a>-->
+                </div>
+                <div class="floating-engage call-me-back" onclick="CCMgr.logClick('call-me-back');CCMgr.openWindow('call-me-back')" style="background-color: rgb(72, 72, 72);">
+                    <div class="buttonCaption" style="background-color: rgb(72, 72, 72); color: rgb(255, 255, 255); font-family: Verdana;">
+                        Retorno de llamada
+                    </div>
+                        <!--<img alt="Reserva en línea" src="/static/ciencia/img/CIUDAD1.jpg">-->
+                        <img alt="Reserva en línea" src="/static/ciencia/img/CIUDAD1.jpg"><!--
+                        <a alt="Retorno de llamada" class="icon-phone"></a>-->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+             
+<div class="cuadro2"> 
+<div class="cuadro"> qqq
+        <a class="tooltip">
+                    <span class="tooltiptext"> class="tooltiptext">Ha sido extremadamente dificil realizar este paso </span>
+        </a>
+    <div class="interactPluginX">
+	    <div class="engage_icons1">
+		    <div class="floating-engage" >
+                <div class="buttonCaption">
+                       ABC  
+                </div>
+                    <a alt="Reserva en linea" class="icon-calendar"></a> 
+	        </div>
+    
+            <div class="floating-engage" >
+                <div "buttonCaption">                 
+                    xxx
+                </div>
+                <a class="tooltip">
+                    <span> class="tooltiptext">Ha sido extremadamente dificil realizar este paso </span>
+                </a>	                
+	        </div>	            
+        </div>   
+    </div>
+</div>
+</div>
+{% endblock  %}
